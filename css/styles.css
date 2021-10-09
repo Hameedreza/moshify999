@@ -336,6 +336,7 @@ a{
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+
 }
 
 .card--primary .card__header{
@@ -358,6 +359,9 @@ a{
   background: #02cdf1;
 }
 
+.card--primary .badge--primary{
+  background: #1e6ace;
+}
 
 
 .card__header, .card__body{
@@ -407,8 +411,20 @@ a{
   font-weight: 500;
 }
 
+.plan--popular .card__header{
+  position: relative;
+}
 
 
+.plan--popular .card__header::after{
+  content: url(/Images/popular.svg);
+  display: inline-block;
+  width: 40px;
+  position: absolute;
+  right: 5%;
+  top: -5px;
+
+}
 
 
 
@@ -430,11 +446,6 @@ a{
   .plan__description{
     font-size: 1.7rem;
   }
-
-
-
-
-
 
 
 
