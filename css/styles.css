@@ -447,6 +447,48 @@ a{
     font-size: 1.7rem;
   }
 
+}
+
+
+/* Media Component */
+
+
+
+.media{
+  display: flex;
+  flex-direction: row;
+}
+
+.media__title{
+  margin-top: 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+
+.media__body{
+  margin:  0 2rem;
+}
+
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__content{
+  font-size: 2rem;
+  color: #7b858b;
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+
+.media__content,
+.media__title{
+  font-size: 1.8rem;
+}
 
 
 }
