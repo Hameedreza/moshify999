@@ -670,7 +670,7 @@ so we define an independent CLASS right below */
 }
 
 .block__heading {
-  margin-top: 0;
+  margin-to : 0;
 }
 
 .block--dark {
@@ -813,18 +813,17 @@ so we define an independent CLASS right below */
   margin: 0 auto;
 }
 
-
 @media screen and (min-width: 768px){
   .block-domain__prices{
     grid-template-columns: repeat(auto-fit, minmax(10rem ,1fr));
   }
 }
 
-
 /* Plans Block */
 .block-plans{
   padding: var(--padding-vertical);
 }
+
 
  .block-plans .grid{
   gap: 8rem 4rem;
@@ -834,6 +833,58 @@ so we define an independent CLASS right below */
   max-width: 500px;
   margin: 0 auto;
 } 
+
+
+  /* FIXME:  Feature Block */
+
+.feature{
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+
+.feature:first-of-type{
+  margin-top: 6rem;
+}
+
+.feature__heading{
+  font-size: 4rem;
+  margin: 2rem 10rem;
+}
+
+.feature__header{
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+
+.feature__image{
+  max-width: 100%;
+}
+
+.feature__content{
+  margin: 0 6rem;
+}
+
+
+.feature__media{
+  margin: 8rem 3rem;
+}
+
+.feature__media-heading{
+  margin-top: 1rem;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .feature:nth-child(even) .feature__items{
+    order: 2;
+  }
+
+}
+
 
 
 
