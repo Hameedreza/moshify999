@@ -672,6 +672,7 @@ so we define an independent CLASS right below */
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -911,6 +912,22 @@ so we define an independent CLASS right below */
   }
 
 }
+
+/* Testimonail Block */
+
+@media screen and (min-width: 1024px) {
+  .testimonial__container {
+    text-align: center;
+    max-width: 110rem;
+  }
+}
+
+
+
+
+
+
+
 
 
 
