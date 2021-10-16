@@ -168,8 +168,8 @@ a {
 /* Icons */
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon--small {
@@ -635,16 +635,19 @@ so we define an independent CLASS right below */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  height: 3rem;
 }
 
 .collapsible__title {
   margin-top: 0;
   font-size: 3rem;
+  color: #fff;
 }
 
 .collapsible--chevron {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .collapsible__content {
@@ -924,10 +927,116 @@ so we define an independent CLASS right below */
 
 
 
+/* Footer */
 
+.footer{
+  background: #232323;
+  min-width: 540px;
+}
 
+.footer__section{
+  border-bottom: 1px solid #393939;
+  margin-bottom: 2rem;
+}
 
+.footer__logo{
+  margin-top: 6rem;
+  text-align: center;
+  padding-bottom: 6rem;
+}
 
+.footer__brand > img{
+  width: 300px;
+  height: 100px;
+}
 
+.footer__copyright{
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: .3;
+}
 
+.collapsible__title a{
+  color: #fff;
+  font-weight: 600;
+  transition: color .5s ease;
 
+}
+
+.collapsible__content a{
+  color: var(--color-body);
+  transition: color .5s ease;
+}
+
+.collapsible__content li{
+  margin-bottom: 2rem;
+  white-space: normal;
+}
+.collapsible__content a:hover,
+.collapsible__title a:hover{
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+
+  .footer__section{
+    border: none;
+  }
+  
+  .collapsible__title{
+    font-size: 1.6rem;
+  }
+
+  .footer .collapsible__title{
+    margin: 0;
+  }
+
+  .collapsible__title a{
+    color: #fff;
+  }
+
+  
+  .collapsible__content{
+    font-size: 1.4rem;
+  }
+
+  .collapsible__content li{
+    margin-bottom: 2rem;
+    white-space: normal;
+  }
+
+  .collapsible__content a{
+    color: #777;
+  }
+
+  .footer .collapsible--chevron{
+    display: none;
+  }
+  .footer .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+    margin-top: 0;
+  }  
+
+.footer__sections{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem , 1fr));
+}
+
+.footer__logo{
+  padding-top: 2rem;
+  order: -1;
+  margin-top: .6rem;
+ 
+}
+
+/* TODO: Consider refactoring this and applying it to all images. */
+
+.footer__brand > img{
+  width: 100%;
+}
+.footer__copyright{
+  font-size: 1.6rem;
+}
+
+}
